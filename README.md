@@ -1,20 +1,18 @@
-# Cleanfolio
+# Vignesh Mohan — Portfolio
 
-Cleanfolio is a portfolio template built with React. However, if you prefer a template built with HTML, CSS, and JavaScript, you can check out [Cleanfolio Minimal](https://github.com/rjshkhr/cleanfolio-minimal).
+Personal portfolio website built with React, showcasing projects, experience, and skills.
 
-## Preview
+## Live
 
-[![Imgur](https://imgur.com/FwDMNEM.gif)](https://rjshkhr.github.io/cleanfolio)
-
-[Live Demo](https://rjshkhr.github.io/cleanfolio)
+[Live Site](https://viggi28.github.io/PortfolioV2)
 
 ## Instructions
 
 ### Setup
 
 ```shell
-git clone https://github.com/rjshkhr/cleanfolio
-cd cleanfolio
+git clone https://github.com/Viggi28/PortfolioV2
+cd PortfolioV2
 ```
 
 If you use [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm), execute:
@@ -31,52 +29,34 @@ fnm install
 fnm use
 ```
 
-To install and launch the project, run these commands:
+To install and launch the project, run:
 
 ```shell
-yarn
-yarn start
+npm install
+npm start
 ```
 
 ### How to Use
 
-- Open the `public/index.html` file and replace:
+- Update `public/index.html` title.
+- Update `src/portfolio.js` with your content and assets.
 
-`<title>John Smith</title>` with `<title>Your Name</title>`.
-
-- Open the `src/portfolio.js` file and make the necessary changes.
-
-- Optionally, you can add an image or logo for each project in two ways:
-  1. **Local image**
-     - Put your image inside the `public/images/` folder
-     - In `portfolio.js`, just use the file name:
-      ```js
-      image: "cleanfolio.png"
-      ```
-
-  2. **Web image**
-     - If your image is already hosted online, just paste the URL:
-     ```js
-     image: "https://example.com/my-logo.png"
-     ```
+Project images can be local or remote:
+1. **Local image**: add to `src/Assets/` and import in `src/portfolio.js`.
+2. **Web image**: set the image field to a URL.
 
 
 
-### Deployment
+### Deployment (GitHub Pages)
 
-- In the `package.json` file, update:
-
-`"homepage": "https://rjshkhr.github.io/cleanfolio"`
-
-to `"homepage": "https://yourusername.github.io"`.
-
-- Push the changes to your repository.
-
-- To build and deploy, run the following commands:
+1. Ensure `homepage` in `package.json` matches:
+   `https://viggi28.github.io/PortfolioV2`
+2. Push changes to GitHub.
+3. Deploy:
 
 ```shell
-yarn build
-yarn deploy
+npm run build
+npm run deploy
 ```
 
 ## License
