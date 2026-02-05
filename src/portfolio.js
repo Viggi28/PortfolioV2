@@ -7,7 +7,7 @@ import DdosImage from './Assets/DDOS.png'
 
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://vigneshmohan.me',
+  homepage: 'https://viggi28.github.io/PortfolioV2',
   title: 'VM',
 }
 
