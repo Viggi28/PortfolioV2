@@ -1,12 +1,112 @@
-.skills__list {
-  max-width: 450px;
+.skills__container {
+  max-width: 1400px;
   width: 95%;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5em;
+  padding: 2em 0;
 }
 
-.skills__list-item {
-  margin: 0.5em;
+.skills__category {
+  background: var(--clr-bg-alt);
+  border-radius: 12px;
+  padding: 1em;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills__category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.skills__category-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+  color: var(--clr-primary);
+  text-align: center;
+  border-bottom: 2px solid var(--clr-primary);
+  padding-bottom: 0.4em;
+}
+
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 0.6em;
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  border-radius: 8px;
+  background: var(--clr-bg);
+  transition: all 0.2s ease;
+  cursor: default;
+  min-height: 70px;
+}
+
+.skills__item:hover {
+  background: var(--clr-primary);
+  color: var(--clr-bg);
+  transform: scale(1.05);
+}
+
+.skills__icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 0.4em;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.skills__name {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.3;
+}
+
+@media (max-width: 1200px) {
+  .skills__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+  }
+}
+
+@media (max-width: 900px) {
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills__container {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  
+  .skills__list {
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 0.6em;
+  }
+  
+  .skills__item {
+    min-height: 65px;
+    padding: 0.5em;
+  }
+  
+  .skills__icon {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .skills__name {
+    font-size: 0.7rem;
+  }
 }

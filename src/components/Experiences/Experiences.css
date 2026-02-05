@@ -1,0 +1,144 @@
+.experiences__list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Timeline: vertical line on the left */
+.experiences__timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.experiences__timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.4rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: var(--clr-primary);
+  opacity: 0.4;
+  border-radius: 1px;
+}
+
+.experiences__item {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.experiences__item:last-child {
+  margin-bottom: 0;
+}
+
+/* Dot on the timeline */
+.experiences__item-marker {
+  position: absolute;
+  left: -2rem;
+  top: 1.25rem;
+  width: 12px;
+  height: 12px;
+  margin-left: -5px;
+  background: var(--clr-primary);
+  border-radius: 50%;
+  border: 3px solid var(--clr-bg);
+  box-shadow: 0 0 0 2px var(--clr-primary);
+  z-index: 1;
+}
+
+.experiences__item--open .experiences__item-marker {
+  box-shadow: 0 0 0 2px var(--clr-primary), 0 0 8px var(--clr-primary);
+}
+
+/* Clickable header (collapsible trigger) */
+.experiences__trigger {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 0.75em 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.experiences__trigger:hover {
+  background-color: var(--clr-bg-alt);
+}
+
+.experiences__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em 1em;
+  margin-bottom: 0.25em;
+}
+
+.experiences__title {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--clr-primary);
+}
+
+.experiences__date {
+  font-size: 0.9rem;
+  color: var(--clr-fg);
+  font-weight: 500;
+}
+
+.experiences__chevron {
+  margin-left: auto;
+  color: var(--clr-fg);
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.experiences__company {
+  margin: 0 0 0.15em 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--clr-fg-alt);
+}
+
+.experiences__location {
+  margin: 0 0 0 0;
+  font-size: 0.9rem;
+  color: var(--clr-fg);
+  opacity: 0.9;
+}
+
+/* Collapsible content */
+.experiences__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out;
+}
+
+.experiences__item--open .experiences__content {
+  max-height: 1200px;
+}
+
+.experiences__bullets {
+  margin: 0.75em 0 0 0;
+  padding-left: 1.25em;
+  padding-bottom: 0.5em;
+  list-style-type: disc;
+}
+
+.experiences__bullet {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+  color: var(--clr-fg);
+}
+
+.experiences__bullet:last-child {
+  margin-bottom: 0;
+}
+
+.experiences__bullet strong {
+  color: var(--clr-fg-alt);
+  font-weight: 600;
+}

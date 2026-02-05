@@ -10,6 +10,16 @@
   transform: translateY(-7px);
 }
 
+.project__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  background: var(--clr-bg-alt);
+  display: block;
+}
+
 .project__description {
   margin-top: 1em;
 }

@@ -1,3 +1,40 @@
 .contact {
   flex-direction: column;
 }
+
+.contact__icons {
+  display: flex;
+  gap: 2em;
+  margin-top: 1.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__icon-link {
+  color: var(--clr-primary);
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__icon-link:hover {
+  transform: scale(1.15);
+  color: var(--clr-fg-alt);
+}
+
+.contact__icon {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 600px) {
+  .contact__icons {
+    gap: 1.5em;
+  }
+  
+  .contact__icon {
+    width: 36px;
+    height: 36px;
+  }
+}
