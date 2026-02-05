@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/PortfolioV2/static/css/main.4eaa2ab5.chunk.css",
+    "main.js": "/PortfolioV2/static/js/main.9b318f16.chunk.js",
+    "main.js.map": "/PortfolioV2/static/js/main.9b318f16.chunk.js.map",
+    "runtime-main.js": "/PortfolioV2/static/js/runtime-main.6d993cd8.js",
+    "runtime-main.js.map": "/PortfolioV2/static/js/runtime-main.6d993cd8.js.map",
+    "static/js/2.5b60dcdb.chunk.js": "/PortfolioV2/static/js/2.5b60dcdb.chunk.js",
+    "static/js/2.5b60dcdb.chunk.js.map": "/PortfolioV2/static/js/2.5b60dcdb.chunk.js.map",
+    "index.html": "/PortfolioV2/index.html",
+    "static/css/main.4eaa2ab5.chunk.css.map": "/PortfolioV2/static/css/main.4eaa2ab5.chunk.css.map",
+    "static/js/2.5b60dcdb.chunk.js.LICENSE.txt": "/PortfolioV2/static/js/2.5b60dcdb.chunk.js.LICENSE.txt",
+    "static/media/Collabio.e93be95a.jpg": "/PortfolioV2/static/media/Collabio.e93be95a.jpg",
+    "static/media/DDOS.aaa30f93.png": "/PortfolioV2/static/media/DDOS.aaa30f93.png",
+    "static/media/Dining_concierge.382d2881.png": "/PortfolioV2/static/media/Dining_concierge.382d2881.png",
+    "static/media/Legal_contract.d9e306d0.jpg": "/PortfolioV2/static/media/Legal_contract.d9e306d0.jpg",
+    "static/media/TCR_epitope.eaf925ed.jpg": "/PortfolioV2/static/media/TCR_epitope.eaf925ed.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d993cd8.js",
+    "static/js/2.5b60dcdb.chunk.js",
+    "static/css/main.4eaa2ab5.chunk.css",
+    "static/js/main.9b318f16.chunk.js"
+  ]
+}
